@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPS", "OOPS\OOPS.csproj", "{97775239-6BC3-4C50-BB35-0A4B0C34CCAB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B3C960AB-36DA-4E00-B744-340B791E2140} = {B3C960AB-36DA-4E00-B744-340B791E2140}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicLibrary", "LogicLibrary\LogicLibrary.csproj", "{B3C960AB-36DA-4E00-B744-340B791E2140}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97775239-6BC3-4C50-BB35-0A4B0C34CCAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97775239-6BC3-4C50-BB35-0A4B0C34CCAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97775239-6BC3-4C50-BB35-0A4B0C34CCAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97775239-6BC3-4C50-BB35-0A4B0C34CCAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3C960AB-36DA-4E00-B744-340B791E2140}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3C960AB-36DA-4E00-B744-340B791E2140}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3C960AB-36DA-4E00-B744-340B791E2140}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3C960AB-36DA-4E00-B744-340B791E2140}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E46361B-0DC0-41EF-97CA-57ADD7BD4D5D}
+	EndGlobalSection
+EndGlobal

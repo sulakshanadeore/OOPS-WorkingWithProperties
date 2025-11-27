@@ -11,20 +11,37 @@ namespace OOPS
     {
         static void Main(string[] args)
         {
+
+            BankAccount account = new BankAccount();
+            account.AccountNo = 123;
+            account.CustomerName = "Jack";
+            account.City = "Banglaore";
+            account.Password = "Jack@123";
+            
+            Console.WriteLine(account.AccountNo);
+            Console.WriteLine(account.CustomerName);
+            Console.WriteLine(account.City);
+            Console.WriteLine($"Initial Balance={account.Balance:C}");
+            account.Deposit(10000);
+            account.Deposit(20000);
+           // Console.WriteLine(account.PrintPwd());
+           
+
+
             //Customers c = new Customers();
             //c.CustomerID = 1;
             //c.CustomerName = "James";
             //c.Pin = 123;
 
 
-            Customers c = new Customers(1, "James", "Mumbai");
+            //Customers c = new Customers(1, "James", "Mumbai");
 
-            Console.WriteLine(c.CustomerID);
-            Console.WriteLine(c.CustomerName);
-            Console.WriteLine("did u forgot your pin");
-            c.ForgotPin=Convert.ToBoolean(Console.ReadLine());
-            Console.WriteLine(c.City);
-           // Console.WriteLine(c.Pin);
+            //Console.WriteLine(c.CustomerID);
+            //Console.WriteLine(c.CustomerName);
+            //Console.WriteLine("did u forgot your pin");
+            //c.ForgotPin=Convert.ToBoolean(Console.ReadLine());
+            //Console.WriteLine(c.City);
+            // Console.WriteLine(c.Pin);
 
 
             //Person p=new Person();
@@ -90,7 +107,7 @@ namespace OOPS
 
             //address.AcceptData(10);
             //address.DisplayData();//10
-            
+
 
         }
     }

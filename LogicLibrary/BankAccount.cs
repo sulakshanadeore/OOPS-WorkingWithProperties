@@ -9,6 +9,11 @@ namespace LogicLibrary
 {
     public class BankAccount
     {
+
+        public BankAccount()
+        {
+            Console.WriteLine("Bank Account Object created");
+        }
         //Automatically(Auto) implemented property-used for only accepting and diplaying(no logic/no validation etc)
         public int AccountNo { get; set; }
         public string CustomerName { get; set; }
@@ -51,7 +56,7 @@ namespace LogicLibrary
 
         public SavingAccount()
         {
-            
+            Console.WriteLine("Savings Account Object created");
         }
 
         public void Deposit(double depositAmt)

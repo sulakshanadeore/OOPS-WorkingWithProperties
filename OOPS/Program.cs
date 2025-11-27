@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.Tracing;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,19 +13,41 @@ namespace OOPS
     {
         static void Main(string[] args)
         {
+            Books b = new Books(2, "Oliver Twist", 120);
+            DateTime issuedDate = new DateTime(2025, 10, 19);
+            DateTime returningdate=b.LendBook(2,issuedDate);
+            Console.WriteLine(returningdate);
+           double amt= b.CalculateFine();
+            Console.WriteLine("Fine amt=" + amt);
 
-            SavingAccount account = new SavingAccount();
-            account.AccountNo = 123;
-            account.CustomerName = "Jack";
-            account.City = "Banglaore";
-            account.Password = "Jack@123";
 
-            Console.WriteLine(account.AccountNo);
-            Console.WriteLine(account.CustomerName);
-            Console.WriteLine(account.City);
-            Console.WriteLine($"Initial Balance={account.Balance:C}");
-            account.Deposit(10000);
-            account.Deposit(20000);
+            Console.WriteLine("---------------");
+
+            Novel novel = new Novel(1, "A Cup of Hope", 1000);
+            Console.WriteLine(novel.Bookid);
+            Console.WriteLine(novel.Name);
+            Console.WriteLine(novel.BookPages);
+            DateTime today=DateTime.Now;
+            DateTime returnDate=novel.LendBook(1, today);
+            Console.WriteLine(returnDate);
+
+
+
+            //Employee employee = new Employee("Harish");
+
+
+            //SavingAccount account = new SavingAccount();
+            //account.AccountNo = 123;
+            //account.CustomerName = "Jack";
+            //account.City = "Banglaore";
+            //account.Password = "Jack@123";
+
+            //Console.WriteLine(account.AccountNo);
+            //Console.WriteLine(account.CustomerName);
+            //Console.WriteLine(account.City);
+            //Console.WriteLine($"Initial Balance={account.Balance:C}");
+            //account.Deposit(10000);
+            //account.Deposit(20000);
 
 
 

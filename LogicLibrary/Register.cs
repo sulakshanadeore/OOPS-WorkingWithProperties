@@ -18,6 +18,16 @@ namespace LogicLibrary
         public string Qualification { get; private set; }
         public string Phone { get;private set; }
 
+        static Register()
+        {
+            //initialize data 
+            //it works before the first constructor of the class is called
+            //its only called once in the lifetime of the class
+
+            Console.WriteLine("Register class started....");
+        }
+
+
         //public Register(string name,string email,string cellid)
         //{
         //    Name=name;  
@@ -37,7 +47,16 @@ namespace LogicLibrary
         //}
         public Register(string name, string email, string cellid, string alterEmailid="", string Qual="",string City="")
         {
-           this.City = City;     
+           Name = name;
+            EmailID = email;
+            Phone = cellid;
+            AlternateEmail=alterEmailid;
+            Qualification = Qual;
+            
+
+           this.City = City;
+
+            Console.WriteLine($"{ Name} |  { EmailID} | { Phone} | { AlternateEmail} | { Qual}| {City}");
         }
 
 

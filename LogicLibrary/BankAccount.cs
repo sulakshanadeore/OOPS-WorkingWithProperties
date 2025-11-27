@@ -17,25 +17,11 @@ namespace LogicLibrary
 
         public string City { get; set; }
 
-        public double Balance { get; private set; }
+        public double Balance { get; protected set; }
 
-        public void Deposit(double depositAmt)
-        {
-            Console.WriteLine("Enter your password");
-            string p = Console.ReadLine();
-            string acceptedPwd = "xyz" + p.GetHashCode();
-            if (acceptedPwd == _pwd)
-            {
-                Balance = Balance + depositAmt;
-                Console.WriteLine($"Current Balance={Balance:C}");
-            }
-            else
-            {
-                Console.WriteLine("U are not allowed to deposit");
-            }
-        }
+      
 
-        private string _pwd;
+         protected string _pwd;
         public string Password 
         {
             private get 
@@ -56,6 +42,34 @@ namespace LogicLibrary
         //{
         //    return _pwd;
         //}
+
+    }
+
+
+    public class SavingAccount : BankAccount
+    {
+
+        public SavingAccount()
+        {
+            
+        }
+
+        public void Deposit(double depositAmt)
+        {
+            Console.WriteLine("Enter your password");
+            string p = Console.ReadLine();
+            string acceptedPwd = "xyz" + p.GetHashCode();
+            if (acceptedPwd == _pwd)
+            {
+                base.Balance =base.Balance + depositAmt;
+                Console.WriteLine($"Current Balance={Balance:C}");
+            }
+            else
+            {
+                Console.WriteLine("U are not allowed to deposit");
+            }
+        }
+
 
     }
 }

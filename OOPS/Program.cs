@@ -13,13 +13,27 @@ namespace OOPS
         static void Main(string[] args)
         {
 
+            SavingAccount account = new SavingAccount();
+            account.AccountNo = 123;
+            account.CustomerName = "Jack";
+            account.City = "Banglaore";
+            account.Password = "Jack@123";
 
-            Register r = new Register("JAck", "jack@gamil.com", "2342424","jakc1@gmail.com","BTECH","Pune");
+            Console.WriteLine(account.AccountNo);
+            Console.WriteLine(account.CustomerName);
+            Console.WriteLine(account.City);
+            Console.WriteLine($"Initial Balance={account.Balance:C}");
+            account.Deposit(10000);
+            account.Deposit(20000);
 
-            Register r1 = new Register(name: "Jack", email: "gack@gmail.com", cellid: "2323234",alterEmailid:"hhh@gmail.com");
 
 
-            Register r2 = new Register("Jack", "gack@gmail.com", "2323234");
+            //Register r = new Register("JAck", "jack@gamil.com", "2342424","jakc1@gmail.com","BTECH","Pune");
+
+            //Register r1 = new Register(name: "Jack", email: "gack@gmail.com", cellid: "2323234",alterEmailid:"hhh@gmail.com");
+
+
+            //Register r2 = new Register("Jack", "gack@gmail.com", "2323234");
 
 
 

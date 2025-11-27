@@ -12,20 +12,37 @@ namespace OOPS
         static void Main(string[] args)
         {
 
-            BankAccount account = new BankAccount();
-            account.AccountNo = 123;
-            account.CustomerName = "Jack";
-            account.City = "Banglaore";
-            account.Password = "Jack@123";
-            
-            Console.WriteLine(account.AccountNo);
-            Console.WriteLine(account.CustomerName);
-            Console.WriteLine(account.City);
-            Console.WriteLine($"Initial Balance={account.Balance:C}");
-            account.Deposit(10000);
-            account.Deposit(20000);
-           // Console.WriteLine(account.PrintPwd());
-           
+            Employee e1 = new Employee(); 
+            Employee e2 = new Employee("Diksha");
+            Employee e3 = new Employee("Jack", "Mumbai");
+            Employee e4 = new Employee("Gauri", "Pune", 10);
+
+            //Orders firstorder=new Orders();
+
+            //Orders secondorder = new Orders(11);
+
+            //Console.WriteLine("--------");
+            //Orders thirdorder = new Orders(12, 101, 1000);
+
+
+
+            //BankAccount account = new BankAccount();
+            //account.AccountNo = 123;
+            //account.CustomerName = "Jack";
+            //account.City = "Banglaore";
+            //account.Password = "Jack@123";
+
+            //Console.WriteLine(account.AccountNo);
+            //Console.WriteLine(account.CustomerName);
+            //Console.WriteLine(account.City);
+            //Console.WriteLine($"Initial Balance={account.Balance:C}");
+            //account.Deposit(10000);
+            //account.Deposit(20000);
+
+
+
+            // Console.WriteLine(account.PrintPwd());
+
 
 
             //Customers c = new Customers();

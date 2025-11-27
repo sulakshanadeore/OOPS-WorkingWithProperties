@@ -1,6 +1,7 @@
 ﻿using LogicLibrary;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,10 +13,23 @@ namespace OOPS
         static void Main(string[] args)
         {
 
-            Employee e1 = new Employee(); 
-            Employee e2 = new Employee("Diksha");
-            Employee e3 = new Employee("Jack", "Mumbai");
-            Employee e4 = new Employee("Gauri", "Pune", 10);
+
+            Register r = new Register("JAck", "jack@gamil.com", "2342424","jakc1@gmail.com","BTECH","Pune");
+
+            Register r1 = new Register(name: "Jack", email: "gack@gmail.com", cellid: "2323234",alterEmailid:"hhh@gmail.com");
+
+
+            Register r2 = new Register("Jack", "gack@gmail.com", "2323234");
+
+
+
+
+
+
+            //Employee e1 = new Employee(); 
+            //Employee e2 = new Employee("Diksha");
+            //Employee e3 = new Employee("Jack", "Mumbai");
+            //Employee e4 = new Employee("Gauri", "Pune", 10);
 
             //Orders firstorder=new Orders();
 

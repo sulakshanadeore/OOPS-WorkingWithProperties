@@ -11,20 +11,36 @@ namespace OOPS
     {
         static void Main(string[] args)
         {
-            Person p=new Person();
+            //Customers c = new Customers();
+            //c.CustomerID = 1;
+            //c.CustomerName = "James";
+            //c.Pin = 123;
 
-            Console.WriteLine("enter Name");
-            p.PersonName = Console.ReadLine();
-            Console.WriteLine($"You entered {p.PersonName}");
 
-            Console.WriteLine("Enter age");
-            p.Age=Convert.ToInt32(Console.ReadLine());
+            Customers c = new Customers(1, "James", "Mumbai");
 
-            if (p.Age != 0) Console.WriteLine(p.Age);
+            Console.WriteLine(c.CustomerID);
+            Console.WriteLine(c.CustomerName);
+            Console.WriteLine("did u forgot your pin");
+            c.ForgotPin=Convert.ToBoolean(Console.ReadLine());
+            Console.WriteLine(c.City);
+           // Console.WriteLine(c.Pin);
 
-            Console.WriteLine("Enter mobile number");
-            p.MobileNo = Convert.ToInt64(Console.ReadLine());
-            Console.WriteLine(p.MobileNo);
+
+            //Person p=new Person();
+
+            //Console.WriteLine("enter Name");
+            //p.PersonName = Console.ReadLine();
+            //Console.WriteLine($"You entered {p.PersonName}");
+
+            //Console.WriteLine("Enter age");
+            //p.Age=Convert.ToInt32(Console.ReadLine());
+
+            //if (p.Age != 0) Console.WriteLine(p.Age);
+
+            //Console.WriteLine("Enter mobile number");
+            //p.MobileNo = Convert.ToInt64(Console.ReadLine());
+            //Console.WriteLine(p.MobileNo);
 
             //if(p.Age==0)
             //Console.WriteLine("Invlaid age");

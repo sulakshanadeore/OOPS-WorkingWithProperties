@@ -32,7 +32,10 @@ namespace LogicLibrary
 
 		public long MobileNo
 		{
-			get { return _mbileno; }
+			get 
+			{
+				return _mbileno; 
+			}
 			set
 			{
 				if (value.ToString().Length == 10)

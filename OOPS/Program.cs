@@ -13,23 +13,73 @@ namespace OOPS
     {
         static void Main(string[] args)
         {
-            Books b = new Books(2, "Oliver Twist", 120);
-            DateTime issuedDate = new DateTime(2025, 10, 19);
-            DateTime returningdate=b.LendBook(2,issuedDate);
-            Console.WriteLine(returningdate);
-           double amt= b.CalculateFine();
-            Console.WriteLine("Fine amt=" + amt);
+
+            ICustomer customer;
+
+            customer = new VIPCustomer();
+            customer.BrowseProducts();
+            customer.AddToCart();
+            customer.PlaceOrder();
+            customer.WriteReview();
+
+            Console.WriteLine("-------------");
+
+            customer = new RegularCustomer();
+           
+            customer.BrowseProducts();
+            customer.AddToCart();
+            customer.PlaceOrder();
+            customer.WriteReview();
+
+            //Drama drama=new Drama();
+            // drama.Launch();
+            // Console.WriteLine("------------------------");
+            //Concert concert=new Concert();
+            //concert.Launch();
+            //concert.BookTicket("ABC");
 
 
-            Console.WriteLine("---------------");
 
-            Novel novel = new Novel(1, "A Cup of Hope", 1000);
-            Console.WriteLine(novel.Bookid);
-            Console.WriteLine(novel.Name);
-            Console.WriteLine(novel.BookPages);
-            DateTime today=DateTime.Now;
-            DateTime returnDate=novel.LendBook(1, today);
-            Console.WriteLine(returnDate);
+            //GooglePay gpay = new GooglePay();
+            //gpay.ConnectToBank();
+            //gpay.Pay();
+
+
+            //PhonePe pe=new PhonePe();
+            //pe.ConnectToBank();
+            //pe.Pay();
+
+
+            // Movie m = new Movie();
+            //double amt= m.BookTicket("Avatar", 3, SeatType.Recliner);
+            // Console.WriteLine(amt);
+
+
+
+            //Swiggy  swiggy = new Swiggy();
+            //swiggy.OrderFood();
+
+            // Books b = new Books(2, "Oliver Twist", 120);
+            // DateTime issuedDate = new DateTime(2025, 10, 19);
+            // DateTime returningdate=b.LendBook(2,issuedDate);
+            // Console.WriteLine(returningdate);
+            //double amt= b.CalculateFine();
+            // Console.WriteLine("Fine amt=" + amt);
+
+
+            // Console.WriteLine("---------------");
+
+            // Novel novel = new Novel(1, "A Cup of Hope", 1000);
+            // Console.WriteLine(novel.Bookid);
+            // Console.WriteLine(novel.Name);
+            // Console.WriteLine(novel.BookPages);
+            //  DateTime today=DateTime.Now;
+            // issuedDate = new DateTime(2025, 10, 19);
+            //returningdate = novel.LendBook(1, issuedDate);
+            //Console.WriteLine(returningdate);
+            // amt = novel.CalculateFine();
+            //Console.WriteLine("Fine amt=" + amt);
+
 
 
 

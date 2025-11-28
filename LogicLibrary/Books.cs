@@ -79,7 +79,9 @@ namespace LogicLibrary
         }
         public override DateTime LendBook(int bookid, DateTime issueDate)
         {
-            return issueDate.AddDays(10);
+            Issudate= issueDate;
+            ReturnDate = issueDate.AddDays(10);
+            return ReturnDate;
         }
 
 

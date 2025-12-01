@@ -67,4 +67,80 @@ namespace LogicLibrary
         }
     }
 
+
+
+
+    interface I1
+    {
+        void M1();
+    
+    }
+
+    interface I2:I1 { }
+    interface I3 { }
+
+    class A : Movie, I2, I3
+    {
+        public void M1()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+
+    interface IViewer
+    {
+        void HitLike();
+        void Share();
+
+        void Comment(string review);
+
+           
+    
+    }
+
+    interface ICreator
+    {
+
+        void Create();
+        void Edit();
+
+    
+    }
+
+    public class ShowVideos : ICreator,IViewer
+     {
+
+        public int CntLike { get; private set; }
+
+        
+        public void Comment(string review)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Create()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Edit()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void HitLike()
+        {
+           // throw new NotImplementedException();
+           CntLike++;   
+        }
+
+        public void Share()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+
+
 }

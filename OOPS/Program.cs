@@ -14,22 +14,46 @@ namespace OOPS
         static void Main(string[] args)
         {
 
-            ICustomer customer;
+            //ICustomer customer;
 
-            customer = new VIPCustomer();
-            customer.BrowseProducts();
-            customer.AddToCart();
-            customer.PlaceOrder();
-            customer.WriteReview();
+            //customer = new VIPCustomer();
+            //customer.BrowseProducts();
+            //customer.AddToCart();
+            //customer.PlaceOrder();
+            //customer.WriteReview();
 
-            Console.WriteLine("-------------");
+            //Console.WriteLine("-------------");
 
-            customer = new RegularCustomer();
+            //customer = new RegularCustomer();
            
-            customer.BrowseProducts();
-            customer.AddToCart();
-            customer.PlaceOrder();
-            customer.WriteReview();
+            //customer.BrowseProducts();
+            //customer.AddToCart();
+            //customer.PlaceOrder();
+            //customer.WriteReview();
+
+
+            ShowVideos v=new ShowVideos();
+            //1
+            v.HitLike();
+            v.HitLike();
+            Console.WriteLine(v.CntLike);
+
+            Console.WriteLine("-------");
+            
+
+            ShowVideos v1=new ShowVideos();
+            //1
+            v1.HitLike();
+            Console.WriteLine(v1.CntLike);
+
+
+            Console.WriteLine("----------------");
+            ShowVideos v2=new ShowVideos();     
+            //1
+            v2.HitLike();
+            Console.WriteLine(v2.CntLike);
+            Console.WriteLine(  "-------");
+
 
             //Drama drama=new Drama();
             // drama.Launch();
